@@ -1,5 +1,9 @@
-section {
-  height: 100%;
-  padding-top: 7rem;
-  overflow: hidden;
+.about-page {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20rem;
 }

@@ -1,15 +1,21 @@
 import React from 'react'
-import { FaAward } from 'react-icons/fa';
-import { VscFolderLibrary } from 'react-icons/vsc';
 import './about.css'
 
 const About = () => {
   return (
-    <section id='about'>
-      <h5>Learn</h5>
-      <h1>About Me</h1>
-      <h1>Testing the git branch changes and issues</h1>
-    </section>
+    <div className='container about-page'>
+      <div className='text-zone'>
+        <h1>About Me</h1>
+      
+      <p> I'm a very ambitious front-end web developer looing for a role in establiushed IT company with the opportunity to work with the latesttechnologies on challenging and diverse projects.</p>
+      <p> I'm a very ambitious front-end web developer looing for a role in establiushed IT company with the opportunity to work with the latesttechnologies on challenging and diverse projects.</p>
+      <p> Be fearless in the pursuit of what sets your sole on fire ~ Unknown</p>
+      </div>
+      
+
+      </div>
+  
+    
   )
 }
 

@@ -7,9 +7,11 @@ import About from './components/about/About'
 const App = () => {
   return (
     <>
-    <Header />
     <Nav />
+    <Header />
     <About />
+    
+   
   
 
     </>
