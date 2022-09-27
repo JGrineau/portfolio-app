@@ -1,4 +1,4 @@
-nav {
+.nav-center {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
   display: block;
@@ -14,20 +14,61 @@ nav {
   backdrop-filter: blur(15px);
 }
 
-nav a {
+.nav-center a {
   background: transparent;
   padding: 0.9rem;
   border-radius: 50%;
   display: flex;
-  color: var(--color-light);
+  color: var(--color-teal);
   font-size: 1.3rem;
 }
 
-nav a:hover {
+.nav-center a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-nav a.active {
+.nav-center a.active {
   background: var(--color-bg);
   color: var(--color-white);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-center {
+    background: rgba(0, 0, 0, 0.7);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+
+  .nav-center a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-teal);
+    font-size: 1.3rem;
+  }
+
+  .nav-center a:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-center a.active {
+    background: var(--color-bg);
+    color: var(--color-white);
+  }
+}
+@media screen and (max-width: 2560px) and (min-width: 769px) {
+  .nav {
+    display: none;
+  }
 }
