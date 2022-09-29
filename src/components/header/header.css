@@ -5,9 +5,9 @@ section {
   overflow: hidden;
   /* background: var(--color-grey); */
   /* background-image: url(../src/assets/background.jpg); */
-  background-image: url(../../assets/white.jpg);
+  /* background-image: url(../../assets/white.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 100%;
 }
 
