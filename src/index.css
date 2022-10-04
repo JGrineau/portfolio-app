@@ -6,7 +6,9 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-} */
+  {/* <img src={LOGO} alt="logo"></img> */
+
+/* <a href="mailto:jgrineau95@gmail.com" className="btn btn-primary">Contact Me</a> */
 
 :root {
   --color-primary: #e5202b;
