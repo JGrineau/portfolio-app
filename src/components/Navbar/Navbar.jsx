@@ -22,6 +22,20 @@ const Navbar = () => {
 
   window.addEventListener('scroll', changeBackground);
 
+
+  const hamburger = document.querySelector(".hamburger");
+  const topList = document.querySelector(".topList");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    topList.classList.toggle("active");
+  })
+
+  document.querySelectorAll(".topList").forEach(n => n.addEventListener("click", () =>{
+    hamburger.classList.remove("active");
+    topList.classList.remove("active");
+  }))
+
   return (
     <div className={top ? 'top active' : 'top'}>
     <div className="topLeft">
@@ -44,6 +58,12 @@ const Navbar = () => {
           <a href="mailto:jgrineau95@gmail.com">Email Me</a>
           </li>
       </ul>
+    </div>
+
+    <div className='hamburger'>
+      <span className='bar'></span>
+      <span className='bar'></span>
+      <span className='bar'></span>
     </div>
       </div>
       

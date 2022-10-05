@@ -31,6 +31,10 @@
   color: var(--color-on-background);
 }
 
+.topIcon:hover {
+  color: #6a6d6e;
+}
+
 /* Top Center Nav Bar*/
 .topCenter {
   flex-basis: 50%;
@@ -74,6 +78,58 @@
 .topListItem a {
   list-style: none;
   text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .topList {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .topListItem {
+    margin: 16px;
+  }
+
+  .topList.active {
+    left: 0;
+  }
 }
 /* .navbar {
   background: rgba(0, 0, 0, 0.7);
