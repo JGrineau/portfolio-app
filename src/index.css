@@ -6,21 +6,37 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-} */
+  {/* <img src={LOGO} alt="logo"></img> */
+
+/* <a href="mailto:jgrineau95@gmail.com" className="btn btn-primary">Contact Me</a> */
 
 :root {
-  --color-white: #fff;
-  --color-teal: #a6ff00;
-  --color-grey: #31687d;
-  /* --color-grey: #949393; */
-  --color-darkgrey: #555555;
-
-  --transition: all 400ms ease;
-
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --color-primary: #e5202b;
+  --color-on-primary: #ffffff;
+  --color-background: #ffffff;
+  --color-background-secondary: #e9eaed;
+  --color-on-background: #27292a;
+  --color-primary-rgb: 229, 32, 43;
+  --color-on-primary-rgb: 255, 255, 255;
+  --color-background-rgb: 255, 255, 255;
+  --color-background-secondary-rgb: 233, 234, 237;
+  --color-on-background-rgb: 39, 41, 42;
+  --color-background-brightness: 255;
+  --button-corner-radius: 0px;
+  --input-corner-radius: 0px;
+  --image-corner-radius: 0px;
+  --font-family-base: "FF DIN Pro", sans-serif;
+  --font-family-heading: "FF DIN Pro Condensed", sans-serif;
+  --font-weight-base: 500;
+  --font-weight-base-bold: bold;
+  --font-weight-heading: 900;
+  --font-style-base: normal;
+  --font-style-heading: italic;
+  --text-transform-base: none;
+  --text-transform-heading: uppercase;
+  --logo-width: 48px;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,123 +48,45 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  /* background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  ); */
-
-  background: linear-gradient(-45deg, #2c2c2c, #27242b, #222627, #191825);
-
-  animation: gradient 20s ease infinite;
-
-  /* background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  ); */
-
-  /* background-color: #121212 !important; */
-  color: var(--color-white);
-  /* line-height: 1.7; */
-  /* background-image: url(../src/assets/bg-texture.png); */
-  /* background-image: url(../src/assets/background.jpg); */
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.text-gradient {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
-}
-/* .bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
-  );
-} */
-
-/* .bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-} */
-
-.bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
-
-.bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
-}
-
-a {
-  transition: var(--transition);
-  color: var(--color-primary);
-}
-
-a:hover {
+  font-family: var(--font-family-base);
   color: var(--color-white);
 }
 
 .btn {
-  width: max-content;
   display: inline-block;
-  color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
-  transition: var(--transition);
+  transition: opacity 300ms ease-out, border-color 300ms ease-out,
+    background-color 300ms ease-out, color 300ms ease-out;
+  border-radius: 0;
   text-decoration: none;
-}
-
-.btn:hover {
-  background-color: var(--color-teal);
-  color: var(--color-grey);
-  border-color: transparent;
+  padding: 16px 42px;
+  -webkit-clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
+  clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
+  cursor: pointer;
+  font-size: 1rem;
+  font-style: var(--font-style-base);
+  font-weight: var(--font-weight-base-bold);
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .btn-primary {
-  background-color: var(--color-white);
-  color: var(--color-grey);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.btn-secondary {
+  background-color: var(--color-on-background);
+  color: var(--color-background);
+}
+
+.btn-primary:hover {
+  background-color: #e06d73;
+}
+
+.btn-secondary:hover {
+  background-color: #6a6d6e;
 }
 
 img {

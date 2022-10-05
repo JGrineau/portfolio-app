@@ -1,32 +1,82 @@
-section {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   display: flex;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  /* background: var(--color-grey); */
-  /* background-image: url(../src/assets/background.jpg); */
-  /* background-image: url(../../assets/white.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; */
   width: 100%;
 }
 
-/* display: flex;
-  align-items: center;
-  justify-content: center;
+video {
   width: 100%;
-  margin: 0;
-  overflow: hidden; */
+  height: 100%;
+  object-fit: cover;
+}
 
 .hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-on-background);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  font-style: var(--font-style-heading);
+  text-transform: var(--text-transform-heading);
+  letter-spacing: -0.02em;
+  font-size: 4.25rem;
+  /* display: flex;
   flex-flow: column;
   text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
+  z-index: 2; */
 }
+
+.cta {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* margin: 20px; */
+  gap: 1.2rem;
+  margin-top: 50%;
+}
+
 .hero h5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-on-background);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  font-style: var(--font-style-heading);
+  text-transform: var(--text-transform-heading);
+  letter-spacing: -0.02em;
+  font-size: 3rem;
+  margin-top: 9%;
+}
+
+/* .hero h5 {
   font-size: 3rem;
   padding: 0%;
   margin-bottom: 0;
@@ -72,8 +122,8 @@ section {
 .scroll__down {
   position: absolute;
   /* right: 5rem; */
-  bottom: 5rem;
-  /* transform: rotate(90deg); */
-  font-weight: 300;
+/* bottom: 5rem; */
+/* transform: rotate(90deg); */
+/* font-weight: 300;
   font-size: 0.9rem;
-}
+} */
