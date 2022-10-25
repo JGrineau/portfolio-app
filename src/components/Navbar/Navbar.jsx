@@ -27,8 +27,8 @@ const Navbar = () => {
   const topList = document.querySelector(".topList");
 
   hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    topList.classList.toggle("active");
+    hamburger.classList.toggle("active")
+    topList.classList.toggle("active")
   })
 
   document.querySelectorAll(".topList").forEach(n => n.addEventListener("click", () =>{

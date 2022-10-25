@@ -12,9 +12,9 @@ const App = () => {
     
    <Router>
     
-      <Navbar />
-      <Header />
       
+      <Header />
+      <Navbar />
       <About />
     </Router>
 
