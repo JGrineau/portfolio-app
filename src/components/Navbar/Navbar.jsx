@@ -4,13 +4,27 @@ import {BsLinkedin} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import logo from '../../assets/logo_red.png'
+import { useState } from 'react';
 
 
 
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false)
+
+  const changeBackground = () => {
+    if(window.scrollY >= 110){
+      setNavbar(true);
+    }else{
+      setNavbar(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeBackground)
+
+
   return (
-    <div className='navbar' >
+    <div className={navbar ? 'navbar active' : 'navbar'} >
      <div className='left'>
             
             <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank"><BsLinkedin /></a>
