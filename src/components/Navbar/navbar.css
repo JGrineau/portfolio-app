@@ -5,13 +5,13 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 999;
+  z-index: 2;
   background: transparent;
   width: 100%;
 }
 
 .navbar.active {
-  background-color: white;
+  background: white;
 }
 
 .logo {
@@ -37,14 +37,14 @@
   flex: 1;
 }
 
-nav {
+.nav {
   list-style: none;
   display: flex;
   flex: 1;
   justify-content: space-evenly;
   align-items: center;
 }
-nav a {
+.nav a {
   text-decoration: none;
   color: var(--color-on-background);
   font-size: 1.2rem;
@@ -66,4 +66,70 @@ nav a {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 940px) {
+  .navbar.active {
+    background-color: white;
+  }
+  .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 300px;
+    right: -400px;
+    width: 300px;
+    height: 100vh;
+    z-index: 3;
+    transition: 0.3s ease-in-out;
+  }
+  .left.active {
+    right: 0;
+  }
+  .left.active a {
+    padding: 2%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    /* top: 60px; */
+    top: 0px;
+    right: -400px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 1.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+  .nav li {
+    padding: 10px;
+  }
+  .nav button {
+    margin-top: 10px;
+  }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 2rem;
+    z-index: 5;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    flex: 0;
+    margin-left: 3rem;
+  }
 }
