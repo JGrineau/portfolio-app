@@ -60,7 +60,7 @@ const Navbar = () => {
                 <a href='https://www.youtube.com/watch?v=FUKpWgRyPlU'>Home</a>
             </li>
             <li> 
-                <a href='https://www.youtube.com/watch?v=FUKpWgRyPlU'>About Me</a>
+                <a href='https://www.youtube.com/watch?v=FUKpWgRyPlU'>About</a>
             </li>
             <li> 
                 <a href='https://www.youtube.com/watch?v=FUKpWgRyPlU'>Projects</a>
