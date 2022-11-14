@@ -8,9 +8,10 @@
   color: var(--color-grey);
 }
 .text-zone {
-  margin-left: 75px;
+  margin-left: 50px;
   margin-top: 100px;
   display: flex;
+  flex: 2;
   flex-flow: column;
   text-align: center;
   align-items: center;
@@ -20,4 +21,22 @@
   align-items: center;
   text-shadow: 1px 1px var(--color-teal);
   color: var(--color-grey);
+}
+
+.logo__about {
+  width: 200px;
+  height: 350px;
+  display: flex;
+  flex: 1;
+  margin-top: 150px;
+  margin-right: 50px;
+  padding: 0;
+  overflow: visible !important;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 1s;
+}
+.logo__about:hover {
+  transform: rotate(360deg) translateZ(0);
 }
