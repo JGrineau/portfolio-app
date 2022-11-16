@@ -9,9 +9,10 @@
   background: var(--color-white);
 
   color: var(--color-grey);
-
+  width: 75%;
+  margin: 0 auto;
   padding: 10px;
-  margin: 10px;
+  /* margin: 10px; */
   flex: 1 100%;
   border-radius: 10px;
 }
@@ -19,6 +20,14 @@
 .text-zone {
   margin-top: 100px;
   flex: 2;
+  text-align: center;
+  justify-content: center;
+}
+.text-zone h1 {
+  margin-bottom: 30px;
+}
+.text-zone p {
+  line-height: 1.5rem;
 }
 .tech {
   padding: 10px;
@@ -33,6 +42,8 @@
   margin: 20px 0px 0px;
   overflow: hidden;
   list-style: none;
+  text-align: center;
+  justify-content: center;
 }
 .tech li {
   margin-bottom: 10px;
@@ -49,10 +60,14 @@
   transform: rotate(360deg) translateZ(0);
 }
 
-@media screen and (max-width: 768px) {
-  .aboutContainer {
-    flex-flow: column;
+/* @media screen and (max-width: 1440px) {
+  .tech ul {
+    text-align: center;
+    justify-content: center;
   }
+} */
+
+@media screen and (max-width: 768px) {
 }
 
 @media screen and (max-width: 425px) {
