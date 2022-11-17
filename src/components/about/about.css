@@ -1,3 +1,11 @@
+.page {
+  background-color: var(--color-on-primary);
+  background-size: 5px 5px;
+  background-image: radial-gradient(
+    var(--color-background-secondary) 1%,
+    transparent 1%
+  );
+}
 .aboutContainer {
   display: flex;
   flex-flow: row wrap;
@@ -7,28 +15,82 @@
   position: relative;
   height: 100vh;
   background: var(--color-white);
-
   color: var(--color-grey);
   width: 75%;
   margin: 0 auto;
   padding: 10px;
-  /* margin: 10px; */
+  gap: 2rem;
   flex: 1 100%;
   border-radius: 10px;
 }
 
-.text-zone {
+.text__zone {
   margin-top: 100px;
   flex: 2;
   text-align: center;
   justify-content: center;
 }
-.text-zone h1 {
+.text__zone h1 {
   margin-bottom: 30px;
 }
-.text-zone p {
+.text__zone p {
   line-height: 1.5rem;
 }
+
+.about__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 60px;
+}
+.about__card {
+  background: var(--color-on-background);
+  color: var(--color-on-primary);
+  border: 1px solid transparent;
+  /* border-radius: 1rem; */
+  -webkit-clip-path: polygon(
+    48px 0%,
+    100% 0,
+    100% calc(100% - 48px),
+    calc(100% - 48px) 100%,
+    0 100%,
+    0% 48px
+  );
+  clip-path: polygon(
+    48px 0%,
+    100% 0,
+    100% calc(100% - 48px),
+    calc(100% - 48px) 100%,
+    0 100%,
+    0% 48px
+  );
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+  line-height: 32px;
+}
+
+.about__card:hover {
+  background: var(--color-on-primary);
+  color: var(--color-on-background);
+  border-color: var(--color-primary);
+  cursor: default;
+}
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about__card h5 {
+  font-size: 1rem;
+}
+
+.about__card small {
+  font-size: 0.9rem;
+  color: var(--color-light);
+}
+
 .tech {
   padding: 10px;
   margin-top: 60px;

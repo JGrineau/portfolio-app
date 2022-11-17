@@ -68,7 +68,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className='portfolio'>
+    <div id='projects' className='portfolio'>
       <h2>Projects</h2>
 
       <div className="portfolio__container">

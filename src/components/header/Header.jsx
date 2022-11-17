@@ -8,7 +8,7 @@ import CTA from './CTA'
 
 const Header = () => {
   return (
-      <div className="main">
+      <div id='home' className="main">
         
         <video src={background} autoPlay loop muted />
         <div className="hero">

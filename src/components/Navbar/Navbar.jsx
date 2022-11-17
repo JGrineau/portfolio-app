@@ -15,6 +15,8 @@ const Navbar = () => {
   const [click, setClick] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
+  const [activeNav, setActiveNav] = useState('#home');
+
   const handleClick = () => setClick(!click)
 
 
@@ -57,13 +59,16 @@ const Navbar = () => {
 
         <div className={click ? 'nav active' : 'nav'}>
             <li> 
-                <a href='https://www.youtube.com/watch?v=FUKpWgRyPlU'>Home</a>
+                {/* <a href='#home'>Home</a> */}
+                <a href="#home" onClick={()=> setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''}>Home</a>
             </li>
             <li> 
-                <a href='#About' to = './About.jsx'> About</a>
+                {/* <a href='#about'>About</a> */}
+                <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a>
             </li>
             <li> 
-                <a href='https://www.youtube.com/watch?v=FUKpWgRyPlU'>Projects</a>
+                {/* <a href='#projects'>Projects</a> */}
+                <a href="#projects" onClick={()=> setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}>Projects</a>
             </li>
             <button className='btn-primary'>Contact</button>
             

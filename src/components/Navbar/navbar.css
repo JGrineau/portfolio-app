@@ -8,10 +8,13 @@
   z-index: 2;
   background: transparent;
   width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .navbar.active {
   background: white;
+  align-items: center;
 }
 
 .logo {
@@ -19,7 +22,12 @@
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+  transition: transform 1s;
 }
+.logo:hover {
+  transform: rotate(360deg) translateZ(0);
+}
+
 .left {
   align-content: center;
   display: flex;
@@ -28,7 +36,11 @@
 }
 .left a {
   color: var(--color-on-background);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+.left a:hover {
+  color: var(--color-primary);
+  font-weight: bold;
 }
 
 .center {
@@ -47,8 +59,18 @@
 .nav a {
   text-decoration: none;
   color: var(--color-on-background);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
+
+.nav a:hover {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a.active {
+  color: var(--color-primary);
+}
+
 .btn-primary {
   display: inline-block;
   transition: opacity 300ms ease-out, border-color 300ms ease-out,
