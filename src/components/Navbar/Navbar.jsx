@@ -47,7 +47,7 @@ const Navbar = () => {
 
         <div className='center'>
         
-            <img className='logo'
+            <img  className='logo'
                 src={logo} alt="Logo"
             />
         

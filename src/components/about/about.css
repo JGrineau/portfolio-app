@@ -5,6 +5,21 @@
     var(--color-background-secondary) 1%,
     transparent 1%
   );
+  /* -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 64px),
+    calc(100% - 64px) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 64px),
+    calc(100% - 64px) 100%,
+    0 100%
+  );
+  color: var(--color-on-background); */
 }
 .aboutContainer {
   display: flex;

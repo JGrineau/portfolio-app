@@ -1,5 +1,19 @@
 .portfolio {
   background-color: var(--color-on-background);
+  /* -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 64px),
+    calc(100% - 64px) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 64px),
+    calc(100% - 64px) 100%,
+    0 100%
+  ); */
 }
 .portfolio h2 {
   display: flex;
