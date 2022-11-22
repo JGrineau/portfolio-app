@@ -31,7 +31,7 @@
 .left {
   align-content: center;
   display: flex;
-  flex: 1;
+  flex: 2;
   justify-content: space-evenly;
 }
 .left a {
@@ -52,8 +52,8 @@
 .nav {
   list-style: none;
   display: flex;
-  flex: 1;
-  justify-content: space-between;
+  flex: 2;
+  justify-content: space-evenly;
   align-items: center;
 }
 .nav a {

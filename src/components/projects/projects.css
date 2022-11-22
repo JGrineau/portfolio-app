@@ -1,4 +1,5 @@
 .portfolio {
+  /* height: 100vh; */
   background-color: var(--color-on-background);
   /* -webkit-clip-path: polygon(
     0 0,

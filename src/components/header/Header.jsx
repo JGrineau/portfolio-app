@@ -11,11 +11,13 @@ const Header = () => {
       <div id='home' className="main">
         
         <video src={background} autoPlay loop muted />
+        
         <div className="hero">
           <h1>JP Grineau</h1>
           <h5>Software Developer</h5>
+          <CTA />
         </div>
-        <CTA />
+        
     
       </div>
   )

@@ -1,11 +1,12 @@
-.page {
+/* .page {
+  height: 100vh;
   background-color: var(--color-on-primary);
   background-size: 5px 5px;
   background-image: radial-gradient(
     var(--color-background-secondary) 1%,
     transparent 1%
-  );
-  /* -webkit-clip-path: polygon(
+  ); */
+/* -webkit-clip-path: polygon(
     0 0,
     100% 0,
     100% calc(100% - 64px),
@@ -20,7 +21,7 @@
     0 100%
   );
   color: var(--color-on-background); */
-}
+
 .aboutContainer {
   display: flex;
   flex-flow: row wrap;

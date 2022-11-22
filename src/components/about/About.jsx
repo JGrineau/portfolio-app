@@ -4,6 +4,7 @@ import logo from '../../assets/logo_red.png'
 import {BsFillPlayFill} from 'react-icons/bs'
 import { FaAward } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
+import TypingEffect from '../typingEffect/TypingEffect';
 
 
 
@@ -46,7 +47,7 @@ const About = () => {
                   <li><BsFillPlayFill /> JavaScript</li>
                </ul>
             </div>
-
+          
             
       </div>
       
@@ -63,6 +64,8 @@ const About = () => {
             
             
       </div>
+    <TypingEffect />
+      
       </div>
     
   )
