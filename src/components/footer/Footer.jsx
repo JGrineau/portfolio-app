@@ -2,6 +2,7 @@ import React from 'react';
 import {BsLinkedin} from 'react-icons/bs'
 import {BsGithub} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
+import Marquee from '../marquee/Marquee';
 import './footer.css';
 
 const Footer = () => {
@@ -10,6 +11,7 @@ const Footer = () => {
 
   return (
     <footer>
+      <Marquee />
       {/* <div className='marquee__container'>
         
           <h1>BEFEARLESSINTHEPURSUITOFWHATSETSYOURSOULONFIRE</h1>
@@ -17,18 +19,18 @@ const Footer = () => {
         
       </div> */}
 
-<div class="marquee">
+{/* <div class="marquee">
       <h3>
         <div class="marquee-wrapper">
           <div class="marquee-title">
-          <span>BEFEARLESSINTHEPURSUITOFWHATSETSYOURSOULONFIRE</span>
-          </div>
-          <div class="marquee-title">
-            <span>BEFEARLESSINTHEPURSUITOFWHATSETSYOURSOULONFIRE</span>
+          <span> BE FEARLESS IN THE PURSUIT OF WHAT SETS YOUR SOUL ON FIRE</span>
+          <div className="marquee-title">
+          <span> BE FEARLESS IN THE PURSUIT OF WHAT SETS YOUR SOUL ON FIRE</span>
+          </div>  
           </div>
         </div>
       </h3>
-    </div>
+    </div> */}
 
 
 

@@ -71,6 +71,7 @@ const Portfolio = () => {
     <div id='projects' className='portfolio'>
       <h2>Projects</h2>
 
+      <div className="width__container">
       <div className="portfolio__container">
         
         {soloProjects.map((pro) => (
@@ -103,6 +104,7 @@ const Portfolio = () => {
             </div>
           </article>
         ))}
+        </div>
         </div>
       
     </div>
