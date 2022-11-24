@@ -71,7 +71,17 @@ const Navbar = () => {
                 <a href="#projects" onClick={()=> setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}>Projects</a>
             </li>
             <button className='btn-primary'>Contact</button>
-            
+                <div className="hamburger__show">
+                    
+                        <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank"><BsLinkedin /></a>
+                    
+                    
+                        <a href='https://github.com/JGrineau?tab=repositories' target="_blank"><BsGithub /></a>
+                    
+                    
+                        <a href='https://www.instagram.com/' target="_blank"><BsInstagram /></a>
+                    
+                </div>
         </div>
       </div>
       

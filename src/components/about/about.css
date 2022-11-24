@@ -145,9 +145,19 @@
   }
 } */
 
-@media screen and (max-width: 768px) {
+@media (320px <= width <= 550px) {
+  .about__cards {
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about__card {
+    padding: 2rem;
+    text-align: center;
+  }
+  .aboutContainer {
+    width: 90%;
+  }
 }
-
 @media screen and (max-width: 425px) {
   .logo__about {
     margin-top: 10px;

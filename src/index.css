@@ -1,6 +1,8 @@
-/* * {
-  back
-/* }{<img src={LOGO} alt="logo"></img> */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
 :root {
   --color-primary: #e5202b;
