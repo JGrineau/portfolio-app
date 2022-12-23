@@ -14,7 +14,7 @@
 }
 
 .navbar.active {
-  background: white;
+  background: rgba(248, 246, 246, 0.849);
   align-items: center;
 }
 
@@ -72,24 +72,6 @@
   color: var(--color-primary);
 }
 
-.btn-primary {
-  display: inline-block;
-  transition: opacity 300ms ease-out, border-color 300ms ease-out,
-    background-color 300ms ease-out, color 300ms ease-out;
-  border-radius: 0;
-  text-decoration: none;
-  padding: 10px 30px;
-  -webkit-clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
-  clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
-  cursor: pointer;
-  font-size: 0.7rem;
-  font-style: var(--font-style-base);
-  font-weight: var(--font-weight-base-bold);
-  line-height: 1.2;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-}
 .hamburger__show {
   display: none;
 }

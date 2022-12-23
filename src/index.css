@@ -46,7 +46,7 @@ body {
   color: var(--color-white);
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   transition: opacity 300ms ease-out, border-color 300ms ease-out,
     background-color 300ms ease-out, color 300ms ease-out;
@@ -81,7 +81,7 @@ body {
 
 .btn-secondary:hover {
   background-color: #6a6d6e;
-}
+} */
 
 img {
   display: block;

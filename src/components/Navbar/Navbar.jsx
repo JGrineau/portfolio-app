@@ -7,6 +7,7 @@ import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import logo from '../../assets/logo_red.png'
 import { useState } from 'react';
+import Button from '../button/Button'
 
 
 
@@ -70,7 +71,12 @@ const Navbar = () => {
                 {/* <a href='#projects'>Projects</a> */}
                 <a href="#projects" onClick={()=> setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}>Projects</a>
             </li>
-            <button className='btn-primary'>Contact</button>
+            <Button
+                type="button"
+                buttonStyle="btn--primary"
+                buttonSize="btn--medium"
+                >Contact</Button>
+            
                 <div className="hamburger__show">
                     
                         <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank"><BsLinkedin /></a>
