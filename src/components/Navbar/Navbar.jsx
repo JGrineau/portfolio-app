@@ -5,7 +5,7 @@ import {BsGithub} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
-import logo from '../../assets/logo_red.png'
+import logo from '../../assets/JPG.png'
 import { useState } from 'react';
 import Button from '../button/Button'
 

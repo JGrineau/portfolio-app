@@ -1,0 +1,15 @@
+.logo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.logo--medium {
+  width: 85px;
+  height: 40px;
+}
+
+.logo--large {
+  width: 350px;
+  height: 130px;
+}
