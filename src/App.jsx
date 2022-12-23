@@ -15,14 +15,11 @@ import Logo from './components/logo/Logo'
 const App = () => {
   return (
       <>
-      {/* <Navbar />
+      <Navbar />
       <Header />
       <About />
       <Projects />
-      <Footer />  */}
-      <Logo 
-      type="img"
-      logoSize="logo--medium"></Logo>
+      <Footer /> 
       
       </>
 

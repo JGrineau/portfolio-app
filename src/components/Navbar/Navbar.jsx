@@ -5,7 +5,7 @@ import {BsGithub} from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
-import logo from '../../assets/JPG.png'
+import Logo from '../logo/Logo';
 import { useState } from 'react';
 import Button from '../button/Button'
 
@@ -48,9 +48,10 @@ const Navbar = () => {
 
         <div className='center'>
         
-            <img  className='logo'
-                src={logo} alt="Logo"
-            />
+        <Logo 
+            type="img"
+            logoSize="logo--medium">
+            </Logo>
         
         </div>
         <div className='hamburger' onClick={handleClick}>

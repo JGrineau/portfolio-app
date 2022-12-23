@@ -15,6 +15,11 @@
   letter-spacing: -0.02em;
 }
 
+.btn--small {
+  padding: 9px 28px;
+  font-size: 0.6rem;
+}
+
 .btn--medium {
   padding: 12px 35px;
   font-size: 0.8rem;

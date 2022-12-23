@@ -25,7 +25,7 @@
 }
 .logo {
   height: 40px;
-  width: 40px;
+  width: 30px;
 }
 
 .width__container {
@@ -97,6 +97,7 @@
 
 .portfolio__item-cta {
   display: flex;
+  justify-content: center;
   flex: 1;
   gap: 1rem;
   margin-bottom: 2rem;

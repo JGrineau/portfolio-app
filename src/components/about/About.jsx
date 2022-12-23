@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import logo from '../../assets/logo_red.png'
+import Logo from '../logo/Logo';
 import {BsFillPlayFill} from 'react-icons/bs'
 import { FaAward } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
@@ -54,9 +54,10 @@ const About = () => {
       
 
       <section className='imageSection'>
-      <img className='logo__about'
-                src={logo} alt="Logo" 
-            />
+      <Logo 
+            type="img"
+            logoSize="logo--large">
+            </Logo>
             </section>
 
              

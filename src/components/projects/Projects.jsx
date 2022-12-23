@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../../assets/logo_red.png'
+import logo from '../../assets/JPG.png'
+import Button from '../button/Button';
 
 
 import './projects.css';
@@ -85,21 +86,37 @@ const Portfolio = () => {
               <p>{pro.technologies}</p>
             </div>
             <div className="portfolio__item-cta">
-              <a
+              {/* <a
                 href={pro.github}
                 target="_blank"
                 className="btn"
                 rel="noreferrer"
               >
                 GitHub
+              </a> */}
+              <a href={pro.github}
+                target="_blank">
+                <Button
+                type="button"
+                buttonStyle="btn--primary"
+                buttonSize="btn--small"
+                >GITHUB</Button>
               </a>
-              <a
+              {/* <a
                 href={pro.link}
                 target="_blank"
                 className="btn"
                 rel="noreferrer"
               >
                 Visit Website
+              </a> */}
+              <a href={pro.github}
+                target="_blank">
+                <Button
+                type="button"
+                buttonStyle="btn--secondary"
+                buttonSize="btn--small"
+                >WEBSITE</Button>
               </a>
             </div>
           </article>
