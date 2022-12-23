@@ -6,7 +6,7 @@ const STYLES = [
   "btn--secondary"
 ]
 
-const SIZES = ["btn--medium", "btn--large"];
+const SIZES = ["btn--medium", "btn--small", "btn--large"];
 
 
 export const Button = ({
