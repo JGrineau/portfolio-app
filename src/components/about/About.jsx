@@ -54,11 +54,11 @@ const About = () => {
       
 
       <section className='imageSection'>
-      <Logo 
-            type="img"
-            logoSize="logo--large">
+            <Logo 
+              type="img"
+              logoSize="logo--large">
             </Logo>
-            </section>
+      </section>
 
              
             
