@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/JPG.png'
+import Pic from '../../assets/Coming Soon.jpg'
 import Button from '../button/Button';
 
 
@@ -10,7 +10,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Bookstore',
-      img: logo,
+      img: Pic,
       description:
         'BookStore app that allows users to store books and update progress',
       technologies: 'React | Redux | Ruby on Rails',
@@ -20,7 +20,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: 'FakeStore',
-      img: logo,
+      img: Pic,
       description:
         'FakeStore app that provides information about available products and their details',
       technologies: 'React | Redux',
@@ -30,7 +30,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: 'To-Do-App',
-      img: logo,
+      img: Pic,
       description: 'User friendly app to plan your day and manage tasks',
       technologies: 'JavaScript | Webpack',
       link: 'https://meri-mg.github.io/To-Do-List/dist/',
@@ -39,7 +39,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: 'Shelter',
-      img: logo,
+      img: Pic,
       description:
         'Fully responsive interactive website built based on Figma design',
       technologies: 'JavaScript | CSS',
@@ -49,7 +49,7 @@ const Portfolio = () => {
     {
       id: 5,
       title: 'World News',
-      img: logo,
+      img: Pic,
       description:
         'Fully responsive interactive website built based on Adobe XD design',
       technologies: 'JavaScript | CSS',
@@ -59,7 +59,7 @@ const Portfolio = () => {
     {
       id: 6,
       title: 'Math Resource',
-      img: logo,
+      img: Pic,
       description:
         'Real-world group project which is still in progress and will provide educational platform for future young developers',
       technologies: 'JavaScript | Scss | Python',
@@ -99,7 +99,7 @@ const Portfolio = () => {
                 <Button
                 type="button"
                 buttonStyle="btn--primary"
-                buttonSize="btn--small"
+                buttonSize="btn--medium"
                 >GITHUB</Button>
               </a>
               {/* <a
@@ -115,7 +115,7 @@ const Portfolio = () => {
                 <Button
                 type="button"
                 buttonStyle="btn--secondary"
-                buttonSize="btn--small"
+                buttonSize="btn--medium"
                 >WEBSITE</Button>
               </a>
             </div>

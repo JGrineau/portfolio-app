@@ -134,7 +134,8 @@
   object-fit: fill;
   transition: transform 1s;
 }
-.logo__about:hover {
+
+.log:hover {
   transform: rotate(360deg) translateZ(0);
 }
 
@@ -158,8 +159,10 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 425px) {
-  .logo__about {
-    margin-top: 10px;
+
+@media (320px <= width <= 925px) {
+  .imageSection {
+    margin-top: 100px;
+    justify-content: center;
   }
 }

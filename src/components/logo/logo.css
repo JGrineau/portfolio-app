@@ -4,9 +4,13 @@
   object-fit: cover;
 }
 
+.logo--small {
+  width: 150px;
+}
+
 .logo--medium {
-  width: 85px;
-  height: 40px;
+  width: 120px;
+  height: 60px;
 }
 
 .logo--large {

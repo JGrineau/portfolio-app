@@ -18,13 +18,13 @@
   align-items: center;
 }
 
-.logo {
+/* .logo {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 1s;
-}
+}*/
 .logo:hover {
   transform: rotate(360deg) translateZ(0);
 }

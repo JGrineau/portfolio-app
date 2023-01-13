@@ -2,7 +2,7 @@ import React from 'react'
 import './logo.css'
 import logo from '../../assets/JPG.png'
 
-const LOGOSIZES = ["logo--medium", "logo--large"];
+const LOGOSIZES = ["logo--small, logo--medium", "logo--large"];
 
 export const Logo = ({
     children,
@@ -14,8 +14,8 @@ export const Logo = ({
     const checkLogoSize = LOGOSIZES.includes(logoSize) ? logoSize : LOGOSIZES[0];
 
   return (
-    <img className={`logo ${checkLogoSize}`}
-    src={logo} alt="Logo" 
+    <img className={`log ${checkLogoSize}`}
+    src={logo} alt="logo" 
     onClick={onClick} 
     type={type}
   >

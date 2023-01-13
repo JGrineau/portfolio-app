@@ -49,6 +49,7 @@ const Navbar = () => {
         <div className='center'>
         
         <Logo 
+        className='logo'
             type="img"
             logoSize="logo--medium">
             </Logo>
