@@ -1,5 +1,6 @@
 import React from 'react';
 import Pic from '../../assets/Coming Soon.jpg'
+import SignUp from '../../assets/Sign up.jpg'
 import Button from '../button/Button';
 
 
@@ -9,13 +10,13 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Bookstore',
-      img: Pic,
+      title: 'Form Validation',
+      img: SignUp,
       description:
-        'BookStore app that allows users to store books and update progress',
-      technologies: 'React | Redux | Ruby on Rails',
-      link: 'https://github.com/JGrineau',
-      github: 'https://github.com/JGrineau',
+        'Sign up Form that validates users input',
+      technologies: 'React | JS | HTML/CSS',
+      link: 'https://signupformvalidation.netlify.app/',
+      github: 'https://github.com/JGrineau/Form-Validation',
     },
     {
       id: 2,
