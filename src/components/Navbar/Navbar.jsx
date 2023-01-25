@@ -37,13 +37,13 @@ const Navbar = () => {
       
      <div className={click ? 'left active' : 'left'}>
             
-            <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank"><BsLinkedin /></a>
+            <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank" rel="noreferrer"><BsLinkedin /></a>
         
         
-            <a href='https://github.com/JGrineau?tab=repositories' target="_blank"><BsGithub /></a>
+            <a href='https://github.com/JGrineau?tab=repositories' target="_blank" rel="noreferrer"><BsGithub /></a>
         
         
-            <a href='https://www.instagram.com/' target="_blank"><BsInstagram /></a>
+            <a href='https://www.instagram.com/' target="_blank" rel="noreferrer"><BsInstagram /></a>
         </div>
 
         <div className='center'>
@@ -81,13 +81,13 @@ const Navbar = () => {
             
                 <div className="hamburger__show">
                     
-                        <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank"><BsLinkedin /></a>
+                        <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank" rel="noreferrer"><BsLinkedin /></a>
                     
                     
-                        <a href='https://github.com/JGrineau?tab=repositories' target="_blank"><BsGithub /></a>
+                        <a href='https://github.com/JGrineau?tab=repositories' target="_blank" rel="noreferrer"><BsGithub /></a>
                     
                     
-                        <a href='https://www.instagram.com/' target="_blank"><BsInstagram /></a>
+                        <a href='https://www.instagram.com/' target="_blank" rel="noreferrer"><BsInstagram /></a>
                     
                 </div>
         </div>

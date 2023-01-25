@@ -42,13 +42,13 @@ const Footer = () => {
         <li><a href="#projects">Projects</a></li>
       </ul>
       <div className="footer__socials">
-      <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank"><BsLinkedin /></a>
+      <a href='https://www.linkedin.com/in/jpgrineau/' target="_blank" rel="noreferrer"><BsLinkedin /></a>
         
         
-            <a href='https://github.com/JGrineau?tab=repositories' target="_blank"><BsGithub /></a>
+            <a href='https://github.com/JGrineau?tab=repositories' target="_blank" rel="noreferrer"><BsGithub /></a>
         
         
-            <a href='https://www.instagram.com/' target="_blank"><BsInstagram /></a>
+            <a href='https://www.instagram.com/' target="_blank" rel="noreferrer"><BsInstagram /></a>
       </div>
       <div className="footer__copyright">
         <small>&copy; JP Grineau 2022. INC.</small>

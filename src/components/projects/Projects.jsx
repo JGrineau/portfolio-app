@@ -95,7 +95,7 @@ const Portfolio = () => {
                 GitHub
               </a> */}
               <a href={pro.github}
-                target="_blank">
+                target="_blank" rel="noreferrer">
                 <Button
                 type="button"
                 buttonStyle="btn--primary"
@@ -111,7 +111,7 @@ const Portfolio = () => {
                 Visit Website
               </a> */}
               <a href={pro.github}
-                target="_blank">
+                target="_blank" rel="noreferrer">
                 <Button
                 type="button"
                 buttonStyle="btn--secondary"
