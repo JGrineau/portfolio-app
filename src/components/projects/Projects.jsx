@@ -15,7 +15,7 @@ const Portfolio = () => {
       description:
         'Sign up Form that validates users input',
       technologies: 'React | JS | HTML/CSS',
-      link: 'https://www.linkedin.com/in/jpgrineau/',
+      link: 'https://signupformvalidation.netlify.app/',
       github: 'https://github.com/JGrineau/Form-Validation',
     },
     {
@@ -111,7 +111,7 @@ const Portfolio = () => {
               >
                 Visit Website
               </a> */}
-              <a href={pro.github}
+              <a href={pro.link}
                 target="_blank" rel="noreferrer">
                 <Button
                 type="button"
