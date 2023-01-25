@@ -15,7 +15,7 @@ const Portfolio = () => {
       description:
         'Sign up Form that validates users input',
       technologies: 'React | JS | HTML/CSS',
-      link: 'https://signupformvalidation.netlify.app/',
+      link: 'https://www.linkedin.com/in/jpgrineau/',
       github: 'https://github.com/JGrineau/Form-Validation',
     },
     {
