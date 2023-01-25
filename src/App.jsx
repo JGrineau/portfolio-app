@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import About from './components/about/About'
 import Projects from './components/projects/Projects'
 import Footer from './components/footer/Footer'
-import Logo from './components/logo/Logo'
+
 
 
 
