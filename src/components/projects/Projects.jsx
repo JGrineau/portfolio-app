@@ -14,7 +14,7 @@ const Portfolio = () => {
       img: SignUp,
       description:
         'Sign up Form that validates users input',
-      technologies: 'React | JS | HTML/CSS',
+      technologies: 'React | JS | HTML | CSS',
       link: 'https://signupformvalidation.netlify.app/',
       github: 'https://github.com/JGrineau/Form-Validation',
     },
@@ -25,7 +25,7 @@ const Portfolio = () => {
       description:
         'FakeStore app that provides information about available products and their details',
       technologies: 'React | Redux',
-      link: 'https://github.com/JGrineau',
+      link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau',
     },
     {
@@ -34,7 +34,7 @@ const Portfolio = () => {
       img: Pic,
       description: 'User friendly app to plan your day and manage tasks',
       technologies: 'JavaScript | Webpack',
-      link: 'https://github.com/JGrineau',
+      link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau',
     },
     {
@@ -44,7 +44,7 @@ const Portfolio = () => {
       description:
         'Fully responsive interactive website built based on Figma design',
       technologies: 'JavaScript | CSS',
-      link: 'https://github.com/JGrineau',
+      link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau',
     },
     {
@@ -54,7 +54,7 @@ const Portfolio = () => {
       description:
         'Fully responsive interactive website built based on Adobe XD design',
       technologies: 'JavaScript | CSS',
-      link: 'https://github.com/JGrineau',
+      link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau',
     },
     {
@@ -64,7 +64,7 @@ const Portfolio = () => {
       description:
         'Real-world group project which is still in progress and will provide educational platform for future young developers',
       technologies: 'JavaScript | Scss | Python',
-      link: 'https://github.com/JGrineau',
+      link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau',
     },
   ];

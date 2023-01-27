@@ -29,6 +29,7 @@ const Navbar = () => {
     }
   }
 
+
   window.addEventListener('scroll', changeBackground);
 
   return (
@@ -46,13 +47,15 @@ const Navbar = () => {
             <a href='https://www.instagram.com/' target="_blank" rel="noreferrer"><BsInstagram /></a>
         </div>
 
-        <div className='center'>
+        <div className='center' >
         
         <Logo 
-        className='logo'
+            className='logo'
             type="img"
             logoSize="logo--medium">
-            </Logo>
+        </Logo>
+            
+    
         
         </div>
         <div className='hamburger' onClick={handleClick}>
@@ -62,7 +65,7 @@ const Navbar = () => {
 
         <div className={click ? 'nav active' : 'nav'}>
             <li> 
-                {/* <a href='#home'>Home</a> */}
+                
                 <a href="#home" onClick={()=> setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''}>Home</a>
             </li>
             <li> 

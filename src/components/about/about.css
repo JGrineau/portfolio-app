@@ -120,7 +120,7 @@
   margin: 20px 0px 0px;
   overflow: hidden;
   list-style: none;
-  text-align: center;
+  text-align: left;
   justify-content: center;
 }
 .tech li {
@@ -162,7 +162,7 @@
 
 @media (320px <= width <= 925px) {
   .imageSection {
-    margin-top: 100px;
+    margin-top: 70px;
     justify-content: center;
   }
 }

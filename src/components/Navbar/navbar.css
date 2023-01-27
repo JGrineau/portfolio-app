@@ -158,12 +158,15 @@
     display: flex;
     justify-content: center;
     flex: 0;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
   }
 }
 
 @media screen and (max-width) {
   .nav {
     font-size: 4rem;
+  }
+  .navbar.active {
+    background: rgba(248, 246, 246, 0.849);
   }
 }

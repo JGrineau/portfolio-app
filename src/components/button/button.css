@@ -47,3 +47,18 @@
 .btn--secondary:hover {
   background-color: #6a6d6e;
 }
+
+@media (220px <= width <= 320px) {
+  .btn--large {
+    padding: 9px 28px;
+    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (320px <= width <= 475px) {
+  .btn--large {
+    padding: 12px 35px;
+    font-size: 0.9rem;
+  }
+}

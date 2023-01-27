@@ -17,8 +17,10 @@ const About = () => {
       <div className='text__zone'>
         <h1>About Me</h1>
       
-      <p> I'm a very ambitious front-end web developer looing for a role in establiushed IT company with the opportunity to work with the latesttechnologies on challenging and diverse projects.</p>
-      <p> I'm a very ambitious front-end web developer looing for a role in establiushed IT company with the opportunity to work with the latesttechnologies on challenging and diverse projects.</p>
+      <p> I'm a very ambitious front-end web developer looking for a role in establiushed IT company with the opportunity to work with the latest technologies on challenging and diverse projects.</p>
+      <br></br>
+      <p> I am passionate about using my skills to create visually appealing and functional websites that meet the needs of both users and clients. I am constantly learning and staying up to date with the latest web development trends and technologies to ensure that my work is of the highest quality.</p>
+      <br></br>
       <p> Be fearless in the pursuit of what sets your sole on fire ~ Unknown</p>
 
       <div className="about__cards">
@@ -39,12 +41,14 @@ const About = () => {
            <div className='tech'>
               <p>Here are a few technologies I have recently been working with:</p>
                 <ul>
-                  <li><BsFillPlayFill /> JavaScript</li>
-                  <li><BsFillPlayFill /> JavaScript</li>
-                  <li><BsFillPlayFill /> JavaScript</li>
-                  <li><BsFillPlayFill /> JavaScript</li>
-                  <li><BsFillPlayFill /> JavaScript</li>
-                  <li><BsFillPlayFill /> JavaScript</li>
+                  <li><BsFillPlayFill />    JavaScript</li>
+                  <li><BsFillPlayFill />    HTML</li>
+                  <li><BsFillPlayFill />    CSS</li>
+                  <li><BsFillPlayFill />    React</li>
+                  <li><BsFillPlayFill />    Java</li>
+                  <li><BsFillPlayFill />    PHP</li>
+                  <li><BsFillPlayFill />    Node.js</li>
+                  <li><BsFillPlayFill />    SQL</li>
                </ul>
             </div>
           

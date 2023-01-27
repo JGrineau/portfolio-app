@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './header.css'
 import background from '../../assets/dots.mp4'
 import CTA from './CTA'
