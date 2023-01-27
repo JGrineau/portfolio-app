@@ -16,15 +16,15 @@ const TypingEffect = () => {
             loop={Infinity}
             wrapper = "b" 
             steps={[
-                'developer',
+                'Developer',
                 2000,
-                'designer',
+                'Designer',
                 2000,
                 'Life Long Learner',
                 2000,
-                'Youtuber wanna be',
+                'Creator',
                 2000,
-                'critical thinker',
+                'Critical Thinker',
                 2000
             ]}
         />
