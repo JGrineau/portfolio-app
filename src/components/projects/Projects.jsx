@@ -26,7 +26,7 @@ const Portfolio = () => {
         'FakeStore app that provides information about available products and their details',
       technologies: 'React | Redux',
       link: 'https://comingsoonjpg.netlify.app/',
-      github: 'https://github.com/JGrineau',
+      github: 'https://github.com/JGrineau/coming-soon',
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const Portfolio = () => {
       description: 'User friendly app to plan your day and manage tasks',
       technologies: 'JavaScript | Webpack',
       link: 'https://comingsoonjpg.netlify.app/',
-      github: 'https://github.com/JGrineau',
+      github: 'https://github.com/JGrineau/coming-soon',
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ const Portfolio = () => {
         'Fully responsive interactive website built based on Figma design',
       technologies: 'JavaScript | CSS',
       link: 'https://comingsoonjpg.netlify.app/',
-      github: 'https://github.com/JGrineau',
+      github: 'https://github.com/JGrineau/coming-soon',
     },
     {
       id: 5,
@@ -55,7 +55,7 @@ const Portfolio = () => {
         'Fully responsive interactive website built based on Adobe XD design',
       technologies: 'JavaScript | CSS',
       link: 'https://comingsoonjpg.netlify.app/',
-      github: 'https://github.com/JGrineau',
+      github: 'https://github.com/JGrineau/coming-soon',
     },
     {
       id: 6,
@@ -65,7 +65,7 @@ const Portfolio = () => {
         'Real-world group project which is still in progress and will provide educational platform for future young developers',
       technologies: 'JavaScript | Scss | Python',
       link: 'https://comingsoonjpg.netlify.app/',
-      github: 'https://github.com/JGrineau',
+      github: 'https://github.com/JGrineau/coming-soon',
     },
   ];
 
