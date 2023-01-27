@@ -51,7 +51,7 @@ const Footer = () => {
             <a href='https://www.instagram.com/' target="_blank" rel="noreferrer"><BsInstagram /></a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; JP Grineau 2022. INC.</small>
+        <small>&copy; JP Grineau 2023.</small>
       </div>
     </footer>
   )
