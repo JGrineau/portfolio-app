@@ -9,7 +9,7 @@ const Header = () => {
   return (
       <div id='home' className="main">
         
-        <video src={background} playsinline autoPlay loop muted />
+        <video className="video" src={background} playsinline autoPlay loop muted />
         
         <div className="hero">
           <h1>JP Grineau</h1>
