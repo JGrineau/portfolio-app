@@ -1,20 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './about.css'
 import Logo from '../logo/Logo';
 import {BsFillPlayFill} from 'react-icons/bs'
 import { FaAward } from 'react-icons/fa';
 import { VscFolderLibrary } from 'react-icons/vsc';
 import TypingEffect from '../typingEffect/TypingEffect';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 const About = () => {
+  useEffect(()=>{
+    AOS.init({duration: 1000});
+  }, []);
   return (
+
     <div className='page'>
     <div id='about' className='aboutContainer'>
       
-      <div className='text__zone'>
+      <div className='text__zone' data-aos="fade-right">
         <h1>About Me</h1>
       
       <p> I'm a very ambitious front-end web developer looking for a role in establiushed IT company with the opportunity to work with the latest technologies on challenging and diverse projects.</p>
@@ -23,7 +29,7 @@ const About = () => {
       <br></br>
       <p> Be fearless in the pursuit of what sets your sole on fire ~ Unknown</p>
 
-      <div className="about__cards">
+      <div className="about__cards" data-aos="fade-left">
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
@@ -38,7 +44,7 @@ const About = () => {
             </article>
           </div>
 
-           <div className='tech'>
+           <div className='tech' data-aos="fade-right">
               <p>Here are a few technologies I have recently been working with:</p>
                 <ul>
                   <li><BsFillPlayFill />    JavaScript</li>
@@ -57,7 +63,7 @@ const About = () => {
       
       
 
-      <section className='imageSection'>
+      <section className='imageSection' data-aos="fade-left">
             <Logo 
               type="img"
               logoSize="logo--large">
@@ -68,7 +74,7 @@ const About = () => {
             
             
             
-      </div>
+      </div >
     <TypingEffect />
       
       </div>

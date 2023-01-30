@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Pic from '../../assets/Coming Soon.jpg'
 import SignUp from '../../assets/Sign up.jpg'
 import Button from '../button/Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 import './projects.css';
 
 const Portfolio = () => {
+  useEffect(()=>{
+    AOS.init({duration: 1000});
+  }, []);
   const soloProjects = [
     {
       id: 1,
@@ -77,7 +82,7 @@ const Portfolio = () => {
       <div className="portfolio__container">
         
         {soloProjects.map((pro) => (
-          <article className="portfolio__item" key={pro.id}>
+          <article className="portfolio__item" key={pro.id} data-aos="fade-left">
             <div className="portfolio__item-image">
               <img src={pro.img} alt={pro.title} />
             </div>
