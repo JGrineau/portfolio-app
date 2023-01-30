@@ -90,6 +90,7 @@ video {
   }
   .main {
     background-image: url("../../assets/static.jpg");
+    background-size: cover;
   }
   .video {
     display: none;
