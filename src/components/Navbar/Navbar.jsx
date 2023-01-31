@@ -69,18 +69,20 @@ const Navbar = () => {
                 <a href="#home" onClick={()=> setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''}>Home</a>
             </li>
             <li> 
-                {/* <a href='#about'>About</a> */}
+                
                 <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}>About</a>
             </li>
             <li> 
-                {/* <a href='#projects'>Projects</a> */}
+                
                 <a href="#projects" onClick={()=> setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}>Projects</a>
             </li>
+            <a href="mailto:jgrineau95@gmail.com">
             <Button
                 type="button"
                 buttonStyle="btn--primary"
                 buttonSize="btn--medium"
                 >Contact</Button>
+                </a>
             
                 <div className="hamburger__show">
                     
