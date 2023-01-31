@@ -34,7 +34,6 @@
 }
 
 .marquee__content li {
-  /* border: 3px solid teal; */
   width: 25vw;
   flex-shrink: 0;
   align-items: center;

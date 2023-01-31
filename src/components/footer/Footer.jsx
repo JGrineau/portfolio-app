@@ -12,29 +12,6 @@ const Footer = () => {
   return (
     <footer>
       <Marquee />
-      {/* <div className='marquee__container'>
-        
-          <h1>BEFEARLESSINTHEPURSUITOFWHATSETSYOURSOULONFIRE</h1>
-          
-        
-      </div> */}
-
-{/* <div class="marquee">
-      <h3>
-        <div class="marquee-wrapper">
-          <div class="marquee-title">
-          <span> BE FEARLESS IN THE PURSUIT OF WHAT SETS YOUR SOUL ON FIRE</span>
-          <div className="marquee-title">
-          <span> BE FEARLESS IN THE PURSUIT OF WHAT SETS YOUR SOUL ON FIRE</span>
-          </div>  
-          </div>
-        </div>
-      </h3>
-    </div> */}
-
-
-
-
       <a href="#home" className="footer__logo">JPG</a>
       <ul className="links">
         <li><a href="#home">Home</a></li>

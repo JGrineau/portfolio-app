@@ -1,20 +1,5 @@
 .portfolio {
-  /* height: 100vh; */
   background-color: var(--color-on-background);
-  /* -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 64px),
-    calc(100% - 64px) 100%,
-    0 100%
-  );
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 64px),
-    calc(100% - 64px) 100%,
-    0 100%
-  ); */
 }
 .portfolio h2 {
   display: flex;
@@ -40,8 +25,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   justify-content: center;
-  /* width: 75%;
-  width: fit-content; */
   margin: 0 auto;
   padding-bottom: 3rem;
   padding-top: 3rem;
@@ -52,7 +35,6 @@
   flex-direction: column;
   background: var(--color-background);
   padding: 1.3rem;
-  /* border-radius: 2rem; */
   border: 1px solid transparent;
   transition: all 400ms ease;
   -webkit-clip-path: polygon(

@@ -92,14 +92,7 @@ const Portfolio = () => {
               <p>{pro.technologies}</p>
             </div>
             <div className="portfolio__item-cta">
-              {/* <a
-                href={pro.github}
-                target="_blank"
-                className="btn"
-                rel="noreferrer"
-              >
-                GitHub
-              </a> */}
+              
               <a href={pro.github}
                 target="_blank" rel="noreferrer">
                 <Button
@@ -108,14 +101,7 @@ const Portfolio = () => {
                 buttonSize="btn--medium"
                 >GITHUB</Button>
               </a>
-              {/* <a
-                href={pro.link}
-                target="_blank"
-                className="btn"
-                rel="noreferrer"
-              >
-                Visit Website
-              </a> */}
+              
               <a href={pro.link}
                 target="_blank" rel="noreferrer">
                 <Button

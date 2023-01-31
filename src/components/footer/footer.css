@@ -3,7 +3,6 @@ footer {
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
-  /* margin-top: 7rem; */
 }
 
 footer a {
@@ -16,61 +15,6 @@ footer a {
   margin-bottom: 2rem;
   display: inline-block;
 }
-
-/*Attemp 4*/
-
-/* .marquee {
-  padding: 90px 20px;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  text-align: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.marquee h3 {
-  font-size: 94px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.marquee .marquee-wrapper {
-  width: 100000px;
-  animation: marqueeAnimation 38s linear 0s infinite running;
-}
-
-.marquee h3 .marquee-title {
-  margin-right: 20px;
-  float: left;
-}
-
-.text-stroke-black {
-  color: transparent;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: #000000;
-}
-
-@keyframes marqueeAnimation {
-  0% {
-    transform: translateX(100%);
-    left: 0;
-  }
-  100% {
-    left: -900%;
-  }
-}
-
-@media (max-width: 992px) {
-  .marquee h3 {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 549px) {
-  .marquee h3 {
-    font-size: 50px;
-  }
-} */
 
 .links {
   display: flex;
