@@ -44,20 +44,20 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: 'Shelter',
+      title: 'Wine Blog',
       img: Pic,
       description:
-        'Fully responsive interactive website built based on Figma design',
-      technologies: 'JavaScript | CSS',
+        'Fully responsive blog website about wine',
+      technologies: 'WordPress | CSS',
       link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau/coming-soon',
     },
     {
       id: 5,
-      title: 'World News',
+      title: 'Pokemon Application Database',
       img: Pic,
       description:
-        'Fully responsive interactive website built based on Adobe XD design',
+        'Fully responsive interactive website that shows the Pokemon database',
       technologies: 'JavaScript | CSS',
       link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau/coming-soon',
