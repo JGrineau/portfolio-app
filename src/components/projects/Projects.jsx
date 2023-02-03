@@ -25,13 +25,13 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'FakeStore',
+      title: 'Pokemon Application',
       img: Pic,
       description:
-        'FakeStore app that provides information about available products and their details',
-      technologies: 'React | Redux',
-      link: 'https://comingsoonjpg.netlify.app/',
-      github: 'https://github.com/JGrineau/coming-soon',
+        'Fully responsive Pokemon index application',
+      technologies: 'React | JS | HTML | CSS',
+      link: 'https://pokemonjpg.netlify.app/',
+      github: 'https://github.com/JGrineau/pokemon-app',
     },
     {
       id: 3,
@@ -54,10 +54,10 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'Pokemon Application Database',
+      title: 'FakeStore',
       img: Pic,
       description:
-        'Fully responsive interactive website that shows the Pokemon database',
+        'FakeStore app that provides information about available products and their details',
       technologies: 'JavaScript | CSS',
       link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau/coming-soon',
