@@ -4,8 +4,6 @@ import SignUp from '../../assets/Sign up.jpg'
 import Button from '../button/Button';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-
 import './projects.css';
 
 const Portfolio = () => {
