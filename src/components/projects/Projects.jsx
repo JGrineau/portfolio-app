@@ -52,20 +52,20 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'FakeStore',
+      title: 'Music Streaming App',
       img: Pic,
       description:
-        'FakeStore app that provides information about available products and their details',
+        'Music streaming app that mimics Spotify',
       technologies: 'JavaScript | CSS',
       link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau/coming-soon',
     },
     {
       id: 6,
-      title: 'Math Resource',
+      title: 'E-commerce Site',
       img: Pic,
       description:
-        'Real-world group project which is still in progress and will provide educational platform for future young developers',
+        'Real-world E-commerce website for Art pieces',
       technologies: 'JavaScript | Scss | Python',
       link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau/coming-soon',
