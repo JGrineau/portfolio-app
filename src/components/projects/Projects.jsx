@@ -65,7 +65,7 @@ const Portfolio = () => {
       title: 'E-commerce Site',
       img: Pic,
       description:
-        'Real-world E-commerce website for Art pieces',
+        'Real-world E-commerce website',
       technologies: 'JavaScript | Scss | Python',
       link: 'https://comingsoonjpg.netlify.app/',
       github: 'https://github.com/JGrineau/coming-soon',
