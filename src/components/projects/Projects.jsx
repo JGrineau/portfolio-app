@@ -36,7 +36,7 @@ const Portfolio = () => {
       title: 'Calculator App',
       img: Pic,
       description: 'Calculator app that mimics the Apple calculator',
-      technologies: 'JavaScript | Webpack',
+      technologies: 'JavaScript | CSS | HTML',
       link: 'https://calculatorappjg.netlify.app/',
       github: 'https://github.com/JGrineau/Calculator-App',
     },
