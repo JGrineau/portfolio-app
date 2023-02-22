@@ -33,12 +33,12 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'To-Do-App',
+      title: 'Calculator App',
       img: Pic,
-      description: 'User friendly app to plan your day and manage tasks',
+      description: 'Calculator app that mimics the Apple calculator',
       technologies: 'JavaScript | Webpack',
-      link: 'https://comingsoonjpg.netlify.app/',
-      github: 'https://github.com/JGrineau/coming-soon',
+      link: 'https://calculatorappjg.netlify.app/',
+      github: 'https://github.com/JGrineau/Calculator-App',
     },
     {
       id: 4,
