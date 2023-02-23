@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import Pic from '../../assets/Coming Soon.jpg'
+import CalcPic from '../../assets/calculator.jpg'
 import SignUp from '../../assets/Sign up.jpg'
 import Button from '../button/Button';
 import AOS from 'aos';
@@ -34,7 +35,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: 'Calculator App',
-      img: Pic,
+      img: CalcPic,
       description: 'Calculator app that mimics the Apple calculator',
       technologies: 'JavaScript | CSS | HTML',
       link: 'https://calculatorappjg.netlify.app/',
