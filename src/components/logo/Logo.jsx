@@ -17,7 +17,7 @@ export const Logo = ({
     const checkLogoSize = LOGOSIZES.includes(logoSize) ? logoSize : LOGOSIZES[0];
 
   return (
-    
+    <a href='#home'>
     <img className={`log ${checkLogoSize}`}
     src={logo} alt="logo" 
     onClick={onClick}
@@ -29,6 +29,7 @@ export const Logo = ({
     {children}
 
     </img>
+    </a>
   )
 }
 
