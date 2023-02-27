@@ -73,12 +73,12 @@ video {
   .hero h5 {
     font-size: 1.4rem;
   }
-  .main {
+  /* .main {
     background-image: url("../../assets/static.jpg");
   }
   .video {
     display: none;
-  }
+  } */
 }
 
 @media (220px <= width <= 320px) {
@@ -88,11 +88,11 @@ video {
   .hero h5 {
     font-size: 1.4rem;
   }
-  .main {
+  /* .main {
     background-image: url("../../assets/static.jpg");
     background-size: cover;
   }
   .video {
     display: none;
-  }
+  } */
 }
