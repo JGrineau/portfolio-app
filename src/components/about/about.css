@@ -27,7 +27,7 @@
   flex-flow: row wrap;
   text-align: center;
   justify-content: center;
-  overflow: auto;
+  /* overflow: auto; */
   position: relative;
   /* height: 100vh; */
   background: var(--color-white);
