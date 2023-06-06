@@ -44,7 +44,7 @@ const Navbar = () => {
             <a href='https://github.com/JGrineau?tab=repositories' target="_blank" rel="noreferrer"><BsGithub /></a>
         
         
-            <a href='https://www.instagram.com/' target="_blank" rel="noreferrer"><BsInstagram /></a>
+            <a href='https://www.instagram.com/jpgrineau/' target="_blank" rel="noreferrer"><BsInstagram /></a>
         </div>
 
         <div className='center' >
