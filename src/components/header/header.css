@@ -74,6 +74,9 @@ video {
   .hero h5 {
     font-size: 1.4rem;
   }
+  .video {
+    display: none;
+  }
   /* .main {
     background-image: url("../../assets/static.jpg");
   }
@@ -88,6 +91,9 @@ video {
   }
   .hero h5 {
     font-size: 1.4rem;
+  }
+  .video {
+    display: none;
   }
   /* .main {
     background-image: url("../../assets/static.jpg");

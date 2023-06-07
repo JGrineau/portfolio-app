@@ -106,4 +106,7 @@
     height: 400px;
     width: 250px;
   }
+  .width__container {
+    width: 100%;
+  }
 }
