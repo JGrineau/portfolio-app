@@ -17,7 +17,14 @@ const Background = () => {
       canvas.height = height;
     };
 
+    const setupCanvas = () => {
+      canvas.width = width;
+      canvas.height = height;
+      resizeHandler();
+    };
+
     window.addEventListener('resize', resizeHandler);
+    window.addEventListener('load', setupCanvas);
 
     const balls = [];
     const numBalls = 200;
@@ -86,6 +93,7 @@ const Background = () => {
 
     return () => {
       window.removeEventListener('resize', resizeHandler);
+      window.removeEventListener('load', setupCanvas);
     };
   }, []);
 
