@@ -58,7 +58,9 @@ const Navbar = () => {
       </div>
 
       <div className='center'>
+      <a href="/">
         <Logo className='logo' type='img' logoSize='logo--medium' />
+        </a>
       </div>
       
       <div className='hamburger' onClick={handleClick}>
