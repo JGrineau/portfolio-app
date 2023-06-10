@@ -38,6 +38,11 @@
   gap: 2rem;
   flex: 1 100%;
   border-radius: 10px;
+  overflow-x: hidden;
+}
+
+.aos-init:not(.aos-animate):after {
+  position: fixed;
 }
 
 .text__zone {
