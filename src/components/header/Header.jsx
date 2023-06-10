@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 import background from '../../assets/slow-dots.mp4'
 import CTA from './CTA'
-// import Background from '../background/Background'
+import Background from '../background/Background'
 
 
 
@@ -11,7 +11,8 @@ const Header = () => {
       <div id='home' className="main">
         
         <video className="video" src={background} playsinline autoPlay loop muted />
-        {/* <Background /> */}
+        <div className='background'><Background /></div>
+        
         
         
         <div className="hero">

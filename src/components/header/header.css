@@ -49,6 +49,10 @@ video {
   font-size: 3rem;
 }
 
+.background {
+  width: 100vw;
+}
+
 @media (650px <= width <= 1023px) {
   .hero h1 {
     font-size: 6.25rem;
@@ -64,6 +68,9 @@ video {
   }
   .hero h5 {
     font-size: 1.8rem;
+  }
+  .background {
+    width: 100vw;
   }
 }
 
