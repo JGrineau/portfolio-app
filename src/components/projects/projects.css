@@ -1,5 +1,9 @@
 .portfolio {
   background-color: var(--color-on-background);
+  overflow-x: hidden;
+}
+.aos-init:not(.aos-animate):after {
+  position: fixed;
 }
 .portfolio h2 {
   display: flex;
