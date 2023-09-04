@@ -108,17 +108,8 @@
   }
 }
 
-@media (600px <= width <= 1023px) {
+/* @media (600px <= width <= 1023px) {
   .marquee__content li {
     font-size: 2.3rem;
   }
-}
-
-@media (300px <= width <= 599px) {
-  .marquee__content li {
-    font-size: 1.2rem;
-  }
-  .marquee__content {
-    align-items: none;
-  }
-}
+} */
