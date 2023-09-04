@@ -74,6 +74,7 @@
   user-select: none;
   gap: var(--gap);
   font-size: 80px;
+  font-family: var(--font-family-heading);
 }
 
 .marquee__content {
@@ -86,6 +87,7 @@
   list-style: none;
   font-size: 80px;
   margin: 25px;
+  font-family: var(--font-family-heading);
 }
 
 @keyframes scroll {
