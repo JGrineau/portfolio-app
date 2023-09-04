@@ -1,27 +1,28 @@
 import React from 'react'
 import Header from './components/header/Header'
-// import HeaderSocials from './components/header/HeaderSocials'
-// import Nav from './components/nav/Nav'
 import Navbar from './components/Navbar/Navbar'
 import About from './components/about/About'
-import { BrowserRouter as Router } from 'react-router-dom'
+import Projects from './components/projects/Projects'
+import Footer from './components/footer/Footer'
+
+
+
+
+
+
+
 
 
 const App = () => {
   return (
-    
-   <Router>
-    
+      <>
       <Navbar />
       <Header />
-      
       <About />
-    </Router>
+      <Projects />
+      <Footer /> 
+      </>
 
-
-
-
-    
   )
 }
 

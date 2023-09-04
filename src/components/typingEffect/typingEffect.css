@@ -1,0 +1,21 @@
+.typing__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.typing__container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  font-family: var(--font-family-heading);
+}
+
+@media (320px <= width <= 600px) {
+  .typing__container p {
+    font-size: 1.2rem;
+  }
+}

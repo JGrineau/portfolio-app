@@ -1,73 +1,112 @@
-import React from 'react';
-import './navbar.css'
-import { useState } from 'react'
-// import {BsLinkedin} from 'react-icons/bs'
-// import {BsGithub} from 'react-icons/bs'
-import logo from '../../assets/LOGO.png'
-
-
+import React, { useState, useEffect, useRef } from 'react';
+import './navbar.css';
+import { BsLinkedin } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+import { FaBars } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
+import Logo from '../logo/Logo';
+import Button from '../button/Button';
 
 const Navbar = () => {
-  // const [activeNav, setActiveNav] = useState('#');
-  const [top, setTop] = useState(false);
+  const [click, setClick] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+  const [activeNav, setActiveNav] = useState('#home');
+  const menuRef = useRef();
+
+  const handleClick = () => setClick(!click);
 
   const changeBackground = () => {
-    if(window.scrollY >= 80){
-      setTop(true);
-
-    }else{
-      setTop(false);
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeBackground);
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setClick(false);
+    }
+  };
 
+  const handleLinkClick = () => {
+    setClick(false);
+  };
 
-  const hamburger = document.querySelector(".hamburger");
-  const topList = document.querySelector(".topList");
-
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    topList.classList.toggle("active");
-  })
-
-  document.querySelectorAll(".topList").forEach(n => n.addEventListener("click", () =>{
-    hamburger.classList.remove("active");
-    topList.classList.remove("active");
-  }))
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      window.removeEventListener('scroll', changeBackground);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
-    <div className={top ? 'top active' : 'top'}>
-    <div className="topLeft">
-    <i className='topIcon fa-brands fa-linkedin'></i>
-    <i className='topIcon fa-brands fa-square-github'></i>
-    <i className='topIcon fa-brands fa-square-instagram'></i>
-    </div>
-    
-    <div className="topCenter">
-      <img className='topImg'
-        src={logo} alt="Logo"
-      />
-    </div>
-    <div className="topRight">
-      <ul className="topList">
-        <li className='topListItem'>Home</li>
-        <li className='topListItem'>About</li>
-        <li className='topListItem'>Projects</li>
-        <li className='btn btn-primary'>
-          <a href="mailto:jgrineau95@gmail.com">Email Me</a>
-          </li>
-      </ul>
-    </div>
+    <div className={navbar ? 'navbar active' : 'navbar'}>
+      <div className={click ? 'left active' : 'left'}>
+        <a href='https://www.linkedin.com/in/jpgrineau/' target='_blank' rel='noreferrer'>
+          <BsLinkedin />
+        </a>
+        <a href='https://github.com/JGrineau?tab=repositories' target='_blank' rel='noreferrer'>
+          <BsGithub />
+        </a>
+        <a href='https://www.instagram.com/jpgrineau/' target='_blank' rel='noreferrer'>
+          <BsInstagram />
+        </a>
+      </div>
 
-    <div className='hamburger'>
-      <span className='bar'></span>
-      <span className='bar'></span>
-      <span className='bar'></span>
-    </div>
+      <div className='center'>
+      <a href="/">
+        <Logo className='logo' type='img' logoSize='logo--medium' />
+        </a>
       </div>
       
-  )
+      <div className='hamburger' onClick={handleClick}>
+        {click ? (
+          <FaTimes size={30} style={{ color: 'black' }} />
+        ) : (
+          <FaBars size={30} style={{ color: 'black' }} />
+        )}
+      </div>
+
+      <div className={click ? 'nav active' : 'nav'} ref={menuRef}>
+        <li>
+          <a href='#home' onClick={() => { setActiveNav('#home'); handleLinkClick(); }} className={activeNav === '#home' ? 'active' : ''}>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href='#about' onClick={() => { setActiveNav('#about'); handleLinkClick(); }} className={activeNav === '#about' ? 'active' : ''}>
+            About
+          </a>
+        </li>
+        <li>
+          <a href='#projects' onClick={() => { setActiveNav('#projects'); handleLinkClick(); }} className={activeNav === '#projects' ? 'active' : ''}>
+            Projects
+          </a>
+        </li>
+        <a href='mailto:jgrineau95@gmail.com'>
+          <Button type='button' buttonStyle='btn--primary' buttonSize='btn--medium' onClick={handleLinkClick}>
+            Contact
+          </Button>
+        </a>
+
+        <div className='hamburger__show'>
+          <a href='https://www.linkedin.com/in/jpgrineau/' target='_blank' rel='noreferrer'>
+            <BsLinkedin />
+          </a>
+          <a href='https://github.com/JGrineau?tab=repositories' target='_blank' rel='noreferrer'>
+            <BsGithub />
+          </a>
+          <a href='https://www.instagram.com/jpgrineau/' target='_blank' rel='noreferrer'>
+            <BsInstagram />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

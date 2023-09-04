@@ -1,21 +1,26 @@
 import React from 'react'
-
 import './header.css'
-import background from '../../assets/dots.mp4'
+import background from '../../assets/slow-dots.mp4'
 import CTA from './CTA'
+import Background from '../background/Background'
 
 
 
 const Header = () => {
   return (
-      <div className="main">
+      <div id='home' className="main">
         
-        <video src={background} autoPlay loop muted />
+        <video className="video" src={background} playsinline autoPlay loop muted />
+        <div className='background'><Background /></div>
+        
+        
+        
         <div className="hero">
           <h1>JP Grineau</h1>
           <h5>Software Developer</h5>
+          <CTA />
         </div>
-        <CTA />
+        
     
       </div>
   )
