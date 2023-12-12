@@ -37,15 +37,36 @@ const Marquee = () => {
   return (
     <div class="marquee marquee--hover-pause">
       <ul class="marquee__content">
-        <li>All</li>
+        {/* <li>All</li>
         <li>Code</li>
-        <li>Everything</li>
+        <li>Everything</li> */}
+        <li>The</li>
+        <li>Magic</li>
+        <li>you</li>
+        <li>are</li>
+        <li>looking</li>
+        <li>for</li>
+        <li>is</li>
+        <li>the</li>
+        <li>work</li>
+        <li>you</li>
+        <li>are</li>
+        <li>avoiding</li>
       </ul>
 
       <ul class="marquee__content" aria-hidden="true">
-        <li>All</li>
-        <li>Code</li>
-        <li>Everything</li>
+        <li>The</li>
+        <li>Magic</li>
+        <li>you</li>
+        <li>are</li>
+        <li>looking</li>
+        <li>for</li>
+        <li>is</li>
+        <li>the</li>
+        <li>work</li>
+        <li>you</li>
+        <li>are</li>
+        <li>avoiding</li>
       </ul>
     </div>
   );

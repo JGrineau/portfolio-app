@@ -74,7 +74,7 @@
   user-select: none;
   gap: var(--gap);
   font-size: 80px;
-  font-family: var(--font-family-heading);
+  font-family: "FF DIN Pro Condensed", sans-serif;
 }
 
 .marquee__content {
@@ -87,7 +87,7 @@
   list-style: none;
   font-size: 80px;
   margin: 25px;
-  font-family: var(--font-family-heading);
+  font-family: "FF DIN Pro Condensed", sans-serif;
 }
 
 @keyframes scroll {
