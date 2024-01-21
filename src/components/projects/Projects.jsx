@@ -39,7 +39,7 @@ const Portfolio = () => {
       description: "Fully responsive Pokemon index application",
       technologies: "React | JS | HTML | CSS",
       link: "https://pokemonjpg.netlify.app/",
-      github: "https://github.com/JGrineau/pokemon-app",
+      github: "https://github.com/JGrineau/pokemon-api",
     },
     {
       id: 4,
