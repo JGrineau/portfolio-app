@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Pic from "../../assets/Coming Soon.jpg";
 import Vigenere from "../../assets/vigenere.png";
+import deserts from "../../assets/deserts.png"
 import CalcPic from "../../assets/calculator.jpg";
 import SignUp from "../../assets/Sign up.jpg";
 import Button from "../button/Button";
@@ -34,12 +35,12 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Pokemon Application",
-      img: Pic,
-      description: "Fully responsive Pokemon index application",
-      technologies: "React | JS | HTML | CSS",
-      link: "https://pokemonjpg.netlify.app/",
-      github: "https://github.com/JGrineau/pokemon-api",
+      title: "Product list with cart",
+      img: deserts,
+      description: "Fully responsive desert list with a cart",
+      technologies: "JS | HTML | CSS",
+      link: "https://product-list-cart-main.netlify.app/",
+      github: "https://github.com/JGrineau/product-list-cart-main",
     },
     {
       id: 4,
