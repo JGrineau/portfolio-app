@@ -4,6 +4,7 @@ import Vigenere from "../../assets/vigenere.png";
 import deserts from "../../assets/deserts.png"
 import CalcPic from "../../assets/calculator.jpg";
 import SignUp from "../../assets/Sign up.jpg";
+import Todo from "../../assets/todo.png"
 import Button from "../button/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -53,12 +54,12 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: "Wine Blog",
-      img: Pic,
-      description: "Fully responsive blog website about wine",
-      technologies: "WordPress | CSS",
-      link: "https://comingsoonjpg.netlify.app/",
-      github: "https://github.com/JGrineau/coming-soon",
+      title: "TODO App",
+      img: Todo,
+      description: "Todo application for checklists",
+      technologies: "ReactJS | CSS ",
+      link: "https://todo-app-jp-grineau.netlify.app/",
+      github: "https://github.com/JGrineau/todo-app",
     },
     {
       id: 6,
