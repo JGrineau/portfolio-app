@@ -63,12 +63,12 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: "Music Streaming App",
+      title: "Social Media App",
       img: Pic,
-      description: "Music streaming app that mimics Spotify",
-      technologies: "JavaScript | CSS",
-      link: "https://comingsoonjpg.netlify.app/",
-      github: "https://github.com/JGrineau/coming-soon",
+      description: "Social Media App with user friendly interface",
+      technologies: "ReactJS | CSS",
+      link: "https://social-media-app-jp.netlify.app/",
+      github: "https://github.com/JGrineau/social-media-app",
     },
     {
       id: 7,
