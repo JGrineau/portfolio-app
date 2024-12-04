@@ -3,7 +3,6 @@ import Pic from "../../assets/Coming Soon.jpg";
 import Vigenere from "../../assets/vigenere.png";
 import deserts from "../../assets/deserts.png"
 import CalcPic from "../../assets/calculator.jpg";
-import SignUp from "../../assets/Sign up.jpg";
 import Todo from "../../assets/todo.png";
 import Form from "../../assets/Form.png";
 import Button from "../button/Button";
