@@ -4,7 +4,8 @@ import Vigenere from "../../assets/vigenere.png";
 import deserts from "../../assets/deserts.png"
 import CalcPic from "../../assets/calculator.jpg";
 import SignUp from "../../assets/Sign up.jpg";
-import Todo from "../../assets/todo.png"
+import Todo from "../../assets/todo.png";
+import Form from "../../assets/Form.png";
 import Button from "../button/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -28,7 +29,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: "Form Validation",
-      img: SignUp,
+      img: Form,
       description: "Sign up Form that validates users input",
       technologies: "React | JS | HTML | CSS",
       link: "https://signupformvalidation.netlify.app/",
