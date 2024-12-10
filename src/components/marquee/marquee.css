@@ -83,7 +83,7 @@
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
-  animation: scroll 10s linear infinite;
+  animation: scroll 9s linear infinite;
   list-style: none;
   font-size: 80px;
   margin: 25px;
