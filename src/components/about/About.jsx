@@ -23,9 +23,9 @@ const About = () => {
       <div className='text__zone' data-aos="fade-right">
         <h1>About Me</h1>
       
-      <p> I'm a very ambitious front-end web developer looking for a role in establiushed IT company with the opportunity to work with the latest technologies on challenging and diverse projects.</p>
+      <p> I'm a very ambitious software developer looking for a role in established IT company with the opportunity to work with the latest technologies on challenging and diverse projects.</p>
       <br></br>
-      <p> I am passionate about using my skills to create visually appealing and functional websites that meet the needs of both users and clients. I am constantly learning and staying up to date with the latest web development trends and technologies to ensure that my work is of the highest quality.</p>
+      <p> I am passionate about using my skills to create visually appealing and functional websites that meet the needs of both users and clients. I am constantly learning and staying up to date with the latest development trends and technologies to ensure that my work is of the highest quality.</p>
       <br></br>
       <p> Be fearless in the pursuit of what sets your sole on fire ~ Unknown</p>
 
