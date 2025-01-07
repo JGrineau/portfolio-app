@@ -2,9 +2,11 @@
   background-color: var(--color-on-background);
   overflow-x: hidden;
 }
+
 .aos-init:not(.aos-animate):after {
   position: fixed;
 }
+
 .portfolio h2 {
   display: flex;
   justify-content: center;
@@ -12,6 +14,7 @@
   font-size: 2rem;
   color: var(--color-background);
 }
+
 .logo {
   height: 40px;
   width: 30px;
@@ -19,6 +22,8 @@
 
 .width__container {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 75%;
   justify-content: center;
   margin: 0 auto;
@@ -26,91 +31,129 @@
 
 .portfolio__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  justify-content: center;
-  margin: 0 auto;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  padding: 1rem;
+  margin-bottom: 40px;
 }
 
 .portfolio__item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background: var(--color-background);
-  padding: 1.3rem;
-  border: 1px solid transparent;
-  transition: all 400ms ease;
-  -webkit-clip-path: polygon(
-    48px 0%,
-    100% 0,
-    100% calc(100% - 48px),
-    calc(100% - 48px) 100%,
-    0 100%,
-    0% 48px
-  );
-  clip-path: polygon(
-    48px 0%,
-    100% 0,
-    100% calc(100% - 48px),
-    calc(100% - 48px) 100%,
-    0 100%,
-    0% 48px
-  );
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .portfolio__item:hover {
-  border-color: var(--color-background-secondary);
-  background: transparent;
-  color: var(--color-background);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio__item-image {
-  flex: 2;
-  border-radius: 1.5rem;
+  border-radius: 8px;
   overflow: hidden;
-  height: 30%;
+  aspect-ratio: 16/9;
+  margin-bottom: 1rem;
 }
 
-.portfolio__item h3 {
-  margin: 1.2rem 0;
+.portfolio__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.portfolio__item p {
-  margin: 0 0 1.2rem 0;
+.portfolio__item:hover .portfolio__item-image img {
+  transform: scale(1.05);
+}
+
+.portfolio__item-content {
+  flex: 1;
+  padding: 1rem 0;
+  margin-bottom: 20px;
+}
+
+.portfolio__item-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-primary);
+}
+
+.portfolio__item-content p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio__item-content p:last-child {
   font-size: 0.9rem;
+  color: var(--color-primary);
+  opacity: 0.8;
 }
 
 .portfolio__item-cta {
   display: flex;
-  justify-content: center;
-  flex: 1;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
 }
 
-.portfolio__item-content {
-  flex: 2;
-  height: 50%;
+.project-section {
+  margin: 2rem 0;
 }
 
-@media (768px <= width <= 1200px) {
+.project-category {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.project-category::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  margin: 0.5rem auto;
+}
+
+.btn--primary, .btn--secondary {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.btn--primary:hover, .btn--secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
   .portfolio__container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 
-@media (300px <= width <= 767px) {
+@media screen and (max-width: 600px) {
   .portfolio__container {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
+  
   .portfolio__item {
-    height: 400px;
-    width: 250px;
-  }
-  .width__container {
-    width: 100%;
+    padding: 1rem;
   }
 }
