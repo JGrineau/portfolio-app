@@ -6,6 +6,7 @@ import CalcPic from "../../assets/calculator.jpg";
 import Todo from "../../assets/todo.png";
 import Form from "../../assets/Form.png";
 import Button from "../button/Button";
+import PokemonPic from  "../../assets/pokemon.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./projects.css";
@@ -37,11 +38,11 @@ const Portfolio = () => {
     {
       id: 3,
       title: "Pokemon API",
-      img: Todo,
+      img: PokemonPic,
       description: "Pokemon API",
       technologies: "ReactJS | CSS ",
-      link: "https://todo-app-jp-grineau.netlify.app/",
-      github: "https://github.com/JGrineau/todo-app",
+      link: "https://pokemonjpg.netlify.app/",
+      github: "https://github.com/JGrineau/pokemon-api",
     },
   ];
 
