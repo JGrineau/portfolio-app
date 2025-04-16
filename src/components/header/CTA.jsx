@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/JP_Grineau.pdf";
+import CV from "../../assets/JP_Grineau_Resume_2025.pdf";
 import Button from "../button/Button";
 
 const CTA = () => {
