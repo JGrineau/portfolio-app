@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './navbar.css';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsLinkedin, BsYoutube } from 'react-icons/bs';
 import { BsGithub } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
 import { FaBars } from 'react-icons/fa';
@@ -52,8 +52,8 @@ const Navbar = () => {
         <a href='https://github.com/JGrineau?tab=repositories' target='_blank' rel='noreferrer'>
           <BsGithub />
         </a>
-        <a href='https://www.instagram.com/jpgrineau/' target='_blank' rel='noreferrer'>
-          <BsInstagram />
+        <a href='https://www.youtube.com/@visual-timers' target='_blank' rel='noreferrer'>
+          <BsYoutube />
         </a>
       </div>
 
