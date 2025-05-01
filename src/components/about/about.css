@@ -133,8 +133,9 @@
 }
 .imageSection {
   display: flex;
-  margin-top: 400px;
-  flex: 1;
+  margin-top: 100px;
+  /* flex: 1; */
+  justify-content: center;
   background-size: cover;
   object-fit: fill;
   transition: transform 1s;

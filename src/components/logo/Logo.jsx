@@ -1,6 +1,6 @@
 import React from 'react'
 import './logo.css'
-import logo from '../../assets/JPG.png'
+import logo from '../../assets/JPG-logo-removebg.png'
 
 
 

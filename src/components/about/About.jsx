@@ -56,6 +56,14 @@ const About = () => {
                   <li><BsFillPlayFill />    Node.js</li>
                   <li><BsFillPlayFill />    SQL</li>
                </ul>
+
+               <section className='imageSection' data-aos="fade-left">
+            <Logo 
+              type="img"
+              logoSize="logo--large">
+            </Logo>
+      </section>
+      
             </div>
           
             
@@ -63,12 +71,12 @@ const About = () => {
       
       
 
-      <section className='imageSection' data-aos="fade-left">
+      {/* <section className='imageSection' data-aos="fade-left">
             <Logo 
               type="img"
               logoSize="logo--large">
             </Logo>
-      </section>
+      </section> */}
 
              
             
