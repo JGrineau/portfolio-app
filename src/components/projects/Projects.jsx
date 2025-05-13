@@ -3,6 +3,7 @@ import Pic from "../../assets/Coming Soon.jpg";
 import Vigenere from "../../assets/vigenere.png";
 import deserts from "../../assets/deserts.png"
 import CalcPic from "../../assets/calculator.jpg";
+import visualTimers from "../../assets/Visual Timers LOGO 1.png";
 import Todo from "../../assets/todo.png";
 import Form from "../../assets/Form.png";
 import Button from "../button/Button";
@@ -16,6 +17,17 @@ const Portfolio = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  const youtubeProject = [
+    {
+      id: 1,
+      title: "Visual Timers",
+      img: visualTimers, 
+      description: "A growing collection of fully coded, custom-made visual countdown timers. Built without templates or pixel art — all vanilla JS.",
+      technologies: "JavaScript | HTML | CSS",
+      link: "https://visualtimers.netlify.app/", 
+      github: "https://github.com/JGrineau/visual-timers",
+    }
+  ];
   const majorProjects = [
     {
       id: 1,
@@ -23,6 +35,7 @@ const Portfolio = () => {
       img: deserts,
       description: "Fully responsive desert list with a cart",
       technologies: "JS | HTML | CSS",
+      YouTube: "https://www.youtube.com/@visual-timers",
       link: "https://product-list-cart-main.netlify.app/",
       github: "https://github.com/JGrineau/product-list-cart-main",
     },
@@ -133,6 +146,16 @@ const Portfolio = () => {
       <h2>Projects</h2>
 
       <div className="width__container">
+      {/* YouTube project */}
+      <div className="project-section">
+          <h3 className="project-category">YouTube Project</h3>
+          <div className="portfolio__container">
+            {youtubeProject.map((project) => (
+              <ProjectCard project={project} key={project.id} />
+            ))}
+          </div>
+        </div>
+            {/* major projects */}
         <div className="project-section">
           <h3 className="project-category">Major Projects</h3>
           <div className="portfolio__container">
@@ -141,7 +164,7 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-
+        {/* smaller projects */}
         <div className="project-section">
           <h3 className="project-category">Smaller Projects</h3>
           <div className="portfolio__container">
