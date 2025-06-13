@@ -17,18 +17,28 @@ const Portfolio = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  const youtubeProject = [
+  const majorProjects = [
     {
       id: 1,
       title: "Visual Timers",
       img: visualTimers, 
       description: "A growing collection of fully coded, custom-made visual countdown timers. Built without templates or pixel art — all vanilla JS.",
-      technologies: "JavaScript | HTML | CSS",
-      link: "https://visualtimers.netlify.app/", 
+      technologies: "Next.js | TypeScript | Tailwind CSS | React | Firebase",
+      link: "https://visualtimers.net/", 
       github: "https://github.com/JGrineau/visual-timers",
-    }
+    },
+    {
+      id: 2,
+      title: "Pokemon API",
+      img: PokemonPic,
+      description: "Pokemon API",
+      technologies: "ReactJS | CSS ",
+      link: "https://pokemonjpg.netlify.app/",
+      github: "https://github.com/JGrineau/pokemon-api",
+    },
   ];
-  const majorProjects = [
+
+  const smallerProjects = [
     {
       id: 1,
       title: "Product list with cart",
@@ -50,18 +60,6 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Pokemon API",
-      img: PokemonPic,
-      description: "Pokemon API",
-      technologies: "ReactJS | CSS ",
-      link: "https://pokemonjpg.netlify.app/",
-      github: "https://github.com/JGrineau/pokemon-api",
-    },
-  ];
-
-  const smallerProjects = [
-    {
-      id: 1,
       title: "Vigenère Cipher",
       img: Vigenere,
       description:
@@ -71,7 +69,7 @@ const Portfolio = () => {
       github: "https://github.com/JGrineau/vigenere-cipher",
     },
     {
-      id: 2,
+      id: 4,
       title: "Form Validation",
       img: Form,
       description: "Sign up Form that validates users input",
@@ -80,7 +78,7 @@ const Portfolio = () => {
       github: "https://github.com/JGrineau/Form-Validation",
     },
     {
-      id: 3,
+      id: 5,
       title: "Calculator App",
       img: CalcPic,
       description: "Calculator app that mimics the Apple calculator",
@@ -89,7 +87,7 @@ const Portfolio = () => {
       github: "https://github.com/JGrineau/Calculator-App",
     },
     {
-      id: 4,
+      id: 6,
       title: "Social Media App",
       img: Pic,
       description: "Social Media App with user friendly interface",
@@ -98,7 +96,7 @@ const Portfolio = () => {
       github: "https://github.com/JGrineau/social-media-app",
     },
     {
-      id: 5,
+      id: 7,
       title: "E-commerce Site",
       img: Pic,
       description: "Real-world E-commerce website",
@@ -146,15 +144,6 @@ const Portfolio = () => {
       <h2>Projects</h2>
 
       <div className="width__container">
-      {/* YouTube project */}
-      <div className="project-section">
-          <h3 className="project-category">YouTube Project</h3>
-          <div className="portfolio__container">
-            {youtubeProject.map((project) => (
-              <ProjectCard project={project} key={project.id} />
-            ))}
-          </div>
-        </div>
             {/* major projects */}
         <div className="project-section">
           <h3 className="project-category">Major Projects</h3>
